@@ -1,7 +1,7 @@
 """Type definitions for AgentGuard SDK."""
 
 from datetime import datetime
-from typing import Any, Dict, Optional
+from typing import Any, Dict, List, Optional
 
 from pydantic import BaseModel, Field
 
@@ -48,7 +48,7 @@ class Policy(BaseModel):
     id: str = Field(..., description="Policy identifier")
     name: str = Field(..., description="Policy name")
     description: str = Field(..., description="Policy description")
-    rules: list[Dict[str, Any]] = Field(..., description="Policy rules")
+    rules: List[Dict[str, Any]] = Field(..., description="Policy rules")
     enabled: bool = Field(True, description="Whether policy is enabled")
 
 
@@ -57,7 +57,7 @@ class PolicyTestResult(BaseModel):
 
     decision: str = Field(..., description="Policy decision (allow/deny/transform)")
     reason: str = Field(..., description="Reason for the decision")
-    matched_rules: list[str] = Field(default_factory=list, description="Rules that matched")
+    matched_rules: List[str] = Field(default_factory=list, description="Rules that matched")
     transformed_request: Optional[Dict[str, Any]] = Field(
         None, description="Transformed request if applicable"
     )
