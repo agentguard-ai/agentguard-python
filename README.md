@@ -2,14 +2,14 @@
 
 > Enterprise-grade security for AI agents - Runtime protection, policy enforcement, and comprehensive audit trails
 
-[![PyPI version](https://badge.fury.io/py/agentguard.svg)](https://pypi.org/project/agentguard/)
-[![Python versions](https://img.shields.io/pypi/pyversions/agentguard.svg)](https://pypi.org/project/agentguard/)
+[![PyPI version](https://badge.fury.io/py/agentguard-sdk.svg)](https://pypi.org/project/agentguard-sdk/)
+[![Python versions](https://img.shields.io/pypi/pyversions/agentguard-sdk.svg)](https://pypi.org/project/agentguard-sdk/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🚀 Quick Start
 
 ```bash
-pip install agentguard
+pip install agentguard-sdk
 ```
 
 ```python
@@ -49,13 +49,13 @@ print(f"Security decision: {result.security_decision}")
 ### Using pip
 
 ```bash
-pip install agentguard
+pip install agentguard-sdk
 ```
 
 ### Using poetry
 
 ```bash
-poetry add agentguard
+poetry add agentguard-sdk
 ```
 
 ### From source
@@ -265,4 +265,4 @@ AgentGuard provides:
 
 **Built with ❤️ by the AgentGuard team**
 
-[GitHub](https://github.com/agentguard-ai/agentguard-python) • [PyPI](https://pypi.org/project/agentguard/) • [Email](mailto:agentguard@proton.me)
+[GitHub](https://github.com/agentguard-ai/agentguard-python) • [PyPI](https://pypi.org/project/agentguard-sdk/) • [Email](mailto:agentguard@proton.me)
