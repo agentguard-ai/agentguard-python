@@ -11,7 +11,7 @@ def test_client_initialization():
         api_key="test-key",
         ssa_url="http://localhost:3000"
     )
-    
+
     assert guard.api_key == "test-key"
     assert guard.ssa_url == "http://localhost:3000"
     assert guard.timeout == 5.0
@@ -25,7 +25,7 @@ def test_client_with_custom_config():
         timeout=10.0,
         max_retries=5
     )
-    
+
     assert guard.timeout == 10.0
     assert guard.max_retries == 5
 

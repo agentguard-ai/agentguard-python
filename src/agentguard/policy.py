@@ -1,6 +1,6 @@
 """Policy utilities for building and testing policies."""
 
-from typing import Any, Dict, List
+from typing import Any, Dict
 
 from agentguard.types import Policy, PolicyTestResult
 

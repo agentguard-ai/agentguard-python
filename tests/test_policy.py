@@ -16,7 +16,7 @@ def test_policy_builder():
         )
         .build()
     )
-    
+
     assert policy.name == "test-policy"
     assert policy.description == "Test policy description"
     assert len(policy.rules) == 1
@@ -41,7 +41,7 @@ def test_policy_builder_chaining():
         )
         .build()
     )
-    
+
     assert len(policy.rules) == 2
 
 
@@ -59,11 +59,11 @@ def test_policy_tester():
         )
         .build()
     )
-    
+
     result = tester.test_policy(
         policy=policy,
         request={"tool_name": "test", "parameters": {}}
     )
-    
+
     assert result.decision is not None
     assert result.reason is not None
