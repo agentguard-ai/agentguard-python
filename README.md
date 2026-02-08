@@ -1,3 +1,13 @@
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset=".github/logo/tealtiger-logo-dark.png">
+    <source media="(prefers-color-scheme: light)" srcset=".github/logo/tealtiger-logo-light.png">
+    <img alt="TealTiger Logo" src=".github/logo/tealtiger-logo-light.png" width="200">
+  </picture>
+  
+  
+
+
 # TealTiger Python SDK
 
 > The first open-source AI agent security SDK with **client-side guardrails** 🛡️
